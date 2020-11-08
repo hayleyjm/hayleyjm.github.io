@@ -1,0 +1,566 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hayley's Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image hmac"><img src="images/HayleyMacpherson.jpg" alt="" height="269" width="204"/></span>
+                    <h1 id="logo">Hayley J. Macpherson</h1>
+                    <p> Herchel Smith Fellow <br />
+					DAMTP, University of Cambridge, UK</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">Intro</a></li>
+						<li><a href="#two">Research</a></li>
+						<li><a href="#three">What's that picture?</a></li>
+                        <li><a href="#four">CV</a></li>
+<!--                        <li><a href="#five">Not Research</a></li>-->
+                        <li><a href="#five">Outreach</a></li>
+                    </ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+						<li><a href="https://bitbucket.org/dashboard/overview" class="icon brands fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+						<li><a href="mailto: h.macpherson@damtp.cam.ac.uk" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="images/CosmicWeb_banner.png" alt=""/>
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>Cosmology + General Relativity</h2>
+										<!-- <p>...and other fun stuff</p> -->
+									</header>
+									<p>I'm about one third cosmologist and two thirds general relativist. I am mostly interested in figuring out if nonlinear general-relativistic effects can help improve our understanding of the Universe. I spend most of my time writing code and running simulations, like that one up there. <br />
+                                    <br />
+                                    I'm currently the Herchel Smith Fellow in DAMTP at the University of Cambridge, UK. I work in the <a href="http://www.ctc.cam.ac.uk">Centre for Theoretical Cosmology</a> in the Relativity & Gravitation group. <br />
+                                    Previously, I was at Monash University in Melbourne, Australia, <a href="https://www.youtube.com/watch?v=VifHe2M5pj4">doing my PhD</a> under the supervision of <a href="http://users.monash.edu.au/~dprice/">Daniel Price</a> and <a href="http://users.monash.edu.au/~plasky/index.php">Paul Lasky</a>. My PhD thesis is publicly available <a href="https://ui.adsabs.harvard.edu/abs/2019arXiv191013380M/abstract">here</a>.
+                                    </p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Research</h3>
+                                    <h4>Most modern cosmological simulations use an approximate theory of gravity.</h4>
+                                    <p> This is Newton's theory, which describes gravitational interactions by an invisible force pulling anything with mass towards anything else with mass. This works pretty well in most situations we're used to on Earth, and actually in most situations in general. It begins to be a problem if you have something really huge (e.g. a black hole), or something tiny near something relatively huge (e.g. the precession of the perihelion of Mercury around the Sun), or when we consider really large distances. <br />In cosmology our whole game is really large distances. <br />
+                                    <br />
+<!--                                    Einstein's theory of General Relativity describes gravity as a consequence of geometry, so objects move across the "surface" of spacetime, rather than being pulled by an invisible force. Turns out this works much better in those problematic situations. Einstein published his theory over 100 years ago and, so far, <em>all of its predictions have been totally correct</em> (as far as we can tell). <br />-->
+<!--                                    <br />-->
+                                    Einstein's theory of General Relativity is a much better description of gravity in these problematic situations.
+
+                                    Newton's theory (and some extensions to it) is predominantly used in cosmology because it's much simpler. Current state-of-the-art cosmological simulations use a combination of a homogeneous, isotropic spacetime in General Relativity and Newtonian dynamics.
+                                     Comparing what comes out of these simulations to observations means we can use them to test and improve our current best-fit cosmological model; the Lambda Cold Dark Matter model.<!-- These have taught us so much about how the Universe, and all the stuff in it, has evolved. -->  <br />
+                                    <br />
+                                    The instruments we use to observe the Universe are constantly being improved. This means our data are getting more and more precise. As our errorbars get smaller, we're starting to notice some peculiarities between what we see and what we expected to see, based on our cosmological model. One suggestion (among many) is that this could be because we're not using General Relativity <em>in full</em>.  <br />
+                                    <br />
+                                    Newtonian dynamics describes the nonlinear evolution of matter extremely well. But pairing this with a homogeneous, isotropic spacetime means that this spacetime is largely <em>unaffected</em> by this nonlinear evolution. Effects such as curvature and inhomogeneous expansion are not properly captured in these simulations. These will have a direct effect on our observations, since they both affect the path of light rays as they travel towards us. But, how large is this effect? Is it important as the precision of our observations improve? Could it already be having an effect on what we observe?<br/>
+                                    <br/>
+                                    <b>Numerical relativity is a way to solve Einstein's equations <em>in full</em> on the computer, so we don't need to make <em>any</em> simplifying assumptions about the spacetime, or the interaction between the matter and that spacetime. I do large-scale cosmological simulations of nonlinear structure formation using numerical relativity. Simulations like this are extremely new, and were only done for the first time a few years ago. See the first ones <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.116y1301G/abstract">here</a>, <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.116y1302B/abstract">here</a>, and <a href="https://ui.adsabs.harvard.edu/abs/2017PhRvD..95f4028M/abstract">here</a>. <br/>
+                                        
+                                        Simulations without simplifying assumptions will allow us to fully quantify any and all of the general-relativistic effects we expect to see in upcoming precision cosmological data, and maybe in existing data too.</b><br/>
+                                        
+                                    <br />
+                                    Check <a href="https://orcid.org/0000-0002-9950-422X">this</a> out for an up-to-date list of what I've been up to.
+                                        
+                                    </p>
+									<!-- See my
+                                    <ul class="feature-icons">
+										<li class="icon solid fa-code">Write all the code</li>
+										<li class="icon solid fa-cubes">Stack small boxes</li>
+										<li class="icon solid fa-book">Read books and stuff</li>
+										<li class="icon solid fa-coffee">Drink much coffee</li>
+										<li class="icon solid fa-bolt">Lightning bolt</li>
+										<li class="icon solid fa-users">Shadow clone technique</li>
+									</ul> -->
+								</div>
+							</section>
+
+
+
+						<!-- Three -->
+						
+							<section id="three">
+								<div class="container">
+									<h3>What's that picture?</h3>
+									<section>
+                                        <h4>It's one of my simulations, so it's a model universe</h4>
+                                        <p><span class="image left"><img src="images/ICs_cmb.png" alt="" height="370" width="370"/></span>
+                                        <b>
+                                        I use computer simulations to study the evolution of the Universe on really large scales. That picture up the top is a snapshot of one of my simulations. It's about 1 Giga-parsec across, or about 30 billion trillion kilometers. </b><br />
+                                        <br />
+                                        Simulations are useful because we can run a whole bunch of different models, and compare them to our observations to figure out which model works the best. <!--This helps us learn about where everything came from.-->
+                                        
+                                        <br /> This picture on the left is what my simulation at the top of the page looked like when it started. It's based on actual observations of the cosmic microwave background radiation, which tells us what the Universe was like just a few hundred thousand years after the Big Bang. In this picture, red spots are hot and blue spots are cold. That also means that red spots are more dense, and blue spots are less dense. <br/>
+                                        
+                                        My simulation then solves Einstein's equations <em>in full</em> to evolve this universe in time. Red spots (higher density) attract other stuff due to gravity, and so the red spots get redder and the blue spots get bluer.
+                                        
+                                        </p>
+                                        <p><span class="image right"><img src="images/FLRW_256c_CMB_1Gpc_fullPk_twilight_square.png" alt="" height="400" width="400"/></span>
+                                        This picture is what my model universe looks like at the present time (at a redshift of zero).
+                                        
+                                        The colours still represent the density of each point, where lighter regions are more dense, and darker regions are less dense.<br/>
+                                        
+                                        This simulation only contains dark matter, whereas galaxies (and stars, planets, you, and me) are made of baryonic matter, which I ignore because there's way more dark matter in the Universe.<br/>
+                                        
+                                        This is what the basic structure of the large-scale galaxy distribution in our Universe looks like, since galaxies trace the dark matter distribution. You can imagine the Milky Way sitting somewhere in one of those dense filaments.<br/>
+                                        <br/>
+                                        <b>We can measure what the distribution of galaxies looks like in real life using observations. The plan is then to compare this to what comes out my simulations, and hopefully this will help us learn something about how nonlinear General Relativity might play a role in these observations.<br/>
+                                        <br/>
+                                        For more details on this simulation (and some others), and the first investigation into cosmological backreaction and local expansion rates using a realistic cosmic web in numerical relativity, see my papers <a href="https://ui.adsabs.harvard.edu/abs/2019PhRvD..99f3522M/abstract">here</a> and <a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...865L...4M/abstract">here</a>.</b>
+                                        </p>
+                                        
+        
+									</section>
+                                
+                            </section>
+					
+                    
+                    <!-- Four -->
+                        <section id="four">
+                            <div class="container">
+                                <h3>CV</h3>
+                                <p>For a breakdown of what I've done and what I can do, see my <a href = "./pdfs/CV_Macpherson2.pdf">CV</a>.</p>
+                                <!-- <form method="post" action="#">
+                                    <div class="row gtr-uniform">
+                                        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                                        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                                        <div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+                                        <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+                                        <div class="col-12">
+                                            <ul class="actions">
+                                                <li><input type="submit" class="primary" value="Send Message" /></li>
+                                                <li><input type="reset" value="Reset Form" /></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form> -->
+                            </div>
+                        </section>
+                    
+                    <!-- Five -->
+                        <section id="five">
+                            <div class="container">
+<!--                                <h3>Things other than research</h3>-->
+                                <h3> Outreach</h3>
+<!--                                <p> Here are some other things I like to spend my time doing...</p>-->
+
+<!--                                <h4>Outreach</h4>-->
+                                <p><span class="image left"><img src="images/Astrolight.jpg" alt="" height="200" width="266"/></span>
+<!--                                Explaining to the general public what we do is super important, and a really good way to solidify our understanding of our own research.-->
+                                I really enjoy engaging with people and getting them excited about science.
+                                
+                                I've given a few public talks at the pub, at high schools, and over Skype to a primary school class in New Zealand. I've done live science demonstrations at schools, and at the <a href="https://astrolightvic.wordpress.com">Astrolight festival</a> in Melbourne, Australia. Check out <a href="https://www.youtube.com/watch?v=oIRxAa-24jc&fbclid=IwAR2r3iHWobUcNpRL2dXvY1Qesxe4P-l1Gc6DQi91eX4n6nl65weS1xokWOc">this</a> YouTube stream I did for kids all about gravity and general relativity.
+                                </p>
+                                <p><span class="image right"><img src="images/AoT_Cambridge_logo.png" alt="" height="200" width="200"/></span>
+                                I'm currently working with some other postdocs and students at Cambridge on our local chapter of <a href="http://astronomyontap.org">Astronomy on Tap</a>. We hold a few Astronomy-themed talks in the pub, over a beer or two, at the <a href="https://maypolefreehouse.co.uk">Maypole</a> on the last Thursday of every month <b>(we're on hold at the moment, but will soon be moving ONLINE)</b>. Check out our <a href="https://www.facebook.com/AoTCambridge/">Facebook</a> page, and our <a href="https://twitter.com/aotcambridge">Twitter</a> to stay up-to-date on what's happening!</p>
+<!--                                <br/>-->
+                                <p><span class="image left"><img src="images/AoT_Talk.jpg" alt="" height="200" width="266"/></span>
+                                <br/>
+                                I'm looking to expand into doing more outreach, since I absolutely love explaining what I do. <br/>If you have anything coming up, or have any suggestions for anyone/anywhere that might be interested in hearing about some cool stuff, please <a href="mailto: h.macpherson@damtp.cam.ac.uk">email me</a>!
+                                <br />
+                                </p>
+
+                            </div>
+                            
+<!--                            <div class="container">-->
+<!--                                <h4>Other things</h4>-->
+<!--                                <p> Here's some of my stuff </p>-->
+<!--                                -->
+<!--                                <div class="box alt">-->
+<!--                                    <div class="row gtr-50 gtr-uniform">-->
+<!--                                        <div class="col-3"><span class="image fit"><img src="images/hunt.jpg" alt="" /></span></div>-->
+<!--                                        <div class="col-3"><span class="image fit"><img src="images/winki_lines.jpg" alt="" /></span></div>-->
+<!--                                        <div class="col-3"><span class="image fit"><img src="images/seagull.jpg" alt="" /></span></div>-->
+<!--                                        <div class="col-3"><span class="image fit"><img src="images/elephant_baby.jpg" alt="" /></span></div>-->
+<!--<!--                                        <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>-->
+<!--<!--                                        <div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>-->
+<!--<!--                                        <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>-->
+<!--<!--                                        <div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>-->
+<!--<!--                                        <div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+                                
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </section>-->
+                    
+                    
+
+<!--					</div>-->
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+<!--								<li>&copy; Hayley Macpherson </li>-->
+                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+                    
+                    </div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+
+                     <!--
+                                        <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+                                        This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+                                        This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+                                        <hr />
+                                        <header>
+                                            <h4>Heading with a Subtitle</h4>
+                                            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+                                        </header>
+                                        <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                        <header>
+                                            <h5>Heading with a Subtitle</h5>
+                                            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+                                        </header>
+                                        <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                        <hr />
+                                        <h2>Heading Level 2</h2>
+                                        <h3>Heading Level 3</h3>
+                                        <h4>Heading Level 4</h4>
+                                        <h5>Heading Level 5</h5>
+                                        <h6>Heading Level 6</h6>
+                                        <hr />
+                                        <h5>Blockquote</h5>
+                                        <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+                                        <h5>Preformatted</h5>
+                                        <pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+                                -->
+
+<!--
+                        <section>
+                            <h4>Image</h4>
+                            <h5>Fit</h5>
+                            <span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+                            <div class="box alt">
+                                <div class="row gtr-50 gtr-uniform">
+                                    <div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+                                </div>
+                            </div>
+                            
+                        </section>
+
+                        <section>
+                            <h4>Lists</h4>
+                            <div class="row">
+                                <div class="col-6 col-12-xsmall">
+                                    <h5>Unordered</h5>
+                                    <ul>
+                                        <li>Dolor pulvinar etiam magna etiam.</li>
+                                        <li>Sagittis adipiscing lorem eleifend.</li>
+                                        <li>Felis enim feugiat dolore viverra.</li>
+                                    </ul>
+                                    <h5>Alternate</h5>
+                                    <ul class="alt">
+                                        <li>Dolor pulvinar etiam magna etiam.</li>
+                                        <li>Sagittis adipiscing lorem eleifend.</li>
+                                        <li>Felis enim feugiat dolore viverra.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-12-xsmall">
+                                    <h5>Ordered</h5>
+                                    <ol>
+                                        <li>Dolor pulvinar etiam magna etiam.</li>
+                                        <li>Etiam vel felis at lorem sed viverra.</li>
+                                        <li>Felis enim feugiat dolore viverra.</li>
+                                        <li>Dolor pulvinar etiam magna etiam.</li>
+                                        <li>Etiam vel felis at lorem sed viverra.</li>
+                                        <li>Felis enim feugiat dolore viverra.</li>
+                                    </ol>
+                                    <h5>Icons</h5>
+                                    <ul class="icons">
+                                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                                        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                                        <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h5>Actions</h5>
+                            <ul class="actions">
+                                <li><a href="#" class="button primary">Default</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                                <li><a href="#" class="button alt">Default</a></li>
+                            </ul>
+                            <ul class="actions small">
+                                <li><a href="#" class="button primary small">Small</a></li>
+                                <li><a href="#" class="button small">Small</a></li>
+                                <li><a href="#" class="button alt small">Small</a></li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-3 col-6-medium col-12-xsmall">
+                                    <ul class="actions stacked">
+                                        <li><a href="#" class="button primary">Default</a></li>
+                                        <li><a href="#" class="button">Default</a></li>
+                                        <li><a href="#" class="button alt">Default</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 col-6 col-12-xsmall">
+                                    <ul class="actions stacked">
+                                        <li><a href="#" class="button primary small">Small</a></li>
+                                        <li><a href="#" class="button small">Small</a></li>
+                                        <li><a href="#" class="button alt small">Small</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 col-6-medium col-12-xsmall">
+                                    <ul class="actions stacked">
+                                        <li><a href="#" class="button primary fit">Default</a></li>
+                                        <li><a href="#" class="button fit">Default</a></li>
+                                        <li><a href="#" class="button alt fit">Default</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 col-6-medium col-12-xsmall">
+                                    <ul class="actions stacked">
+                                        <li><a href="#" class="button primary small fit">Small</a></li>
+                                        <li><a href="#" class="button small fit">Small</a></li>
+                                        <li><a href="#" class="button alt small fit">Small</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h4>Table</h4>
+                            <h5>Default</h5>
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Item One</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Two</td>
+                                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Three</td>
+                                            <td> Morbi faucibus arcu accumsan lorem.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Four</td>
+                                            <td>Vitae integer tempus condimentum.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Five</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <td>100.00</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+                            <h5>Alternate</h5>
+                            <div class="table-wrapper">
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Item One</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Two</td>
+                                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Three</td>
+                                            <td> Morbi faucibus arcu accumsan lorem.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Four</td>
+                                            <td>Vitae integer tempus condimentum.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Five</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <td>100.00</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h4>Buttons</h4>
+                            <ul class="actions">
+                                <li><a href="#" class="button primary">Primary</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                                <li><a href="#" class="button alt">Alternate</a></li>
+                            </ul>
+                            <ul class="actions">
+                                <li><a href="#" class="button primary large">Large</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                                <li><a href="#" class="button alt small">Small</a></li>
+                            </ul>
+                            <ul class="actions fit">
+                                <li><a href="#" class="button primary fit">Fit</a></li>
+                                <li><a href="#" class="button fit">Fit</a></li>
+                                <li><a href="#" class="button alt fit">Fit</a></li>
+                            </ul>
+                            <ul class="actions fit small">
+                                <li><a href="#" class="button primary fit small">Fit + Small</a></li>
+                                <li><a href="#" class="button fit small">Fit + Small</a></li>
+                                <li><a href="#" class="button alt fit small">Fit + Small</a></li>
+                            </ul>
+                            <ul class="actions">
+                                <li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+                                <li><a href="#" class="button icon solid fa-download">Icon</a></li>
+                                <li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
+                            </ul>
+                            <ul class="actions">
+                                <li><span class="button primary disabled">Primary</span></li>
+                                <li><span class="button disabled">Default</span></li>
+                                <li><span class="button alt disabled">Alternate</span></li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h4>Form</h4>
+                            <form method="post" action="#">
+                                <div class="row gtr-uniform">
+                                    <div class="col-6 col-12-xsmall">
+                                        <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+                                    </div>
+                                    <div class="col-6 col-12-xsmall">
+                                        <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+                                    </div>
+                                    <div class="col-12">
+                                        <select name="demo-category" id="demo-category">
+                                            <option value="">- Category -</option>
+                                            <option value="1">Manufacturing</option>
+                                            <option value="1">Shipping</option>
+                                            <option value="1">Administration</option>
+                                            <option value="1">Human Resources</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 col-12-medium">
+                                        <input type="radio" id="demo-priority-low" name="demo-priority" checked>
+                                        <label for="demo-priority-low">Low Priority</label>
+                                    </div>
+                                    <div class="col-4 col-12-medium">
+                                        <input type="radio" id="demo-priority-normal" name="demo-priority">
+                                        <label for="demo-priority-normal">Normal Priority</label>
+                                    </div>
+                                    <div class="col-4 col-12-medium">
+                                        <input type="radio" id="demo-priority-high" name="demo-priority">
+                                        <label for="demo-priority-high">High Priority</label>
+                                    </div>
+                                    <div class="col-6 col-12-medium">
+                                        <input type="checkbox" id="demo-copy" name="demo-copy">
+                                        <label for="demo-copy">Email me a copy of this message</label>
+                                    </div>
+                                    <div class="col-6 col-12-medium">
+                                        <input type="checkbox" id="demo-human" name="demo-human" checked>
+                                        <label for="demo-human">I am a human and not a robot</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="actions">
+                                            <li><input type="submit" value="Send Message" /></li>
+                                            <li><input type="reset" value="Reset" class="alt" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+
+                    </div>
+                                -->
+    </body>
+</html>
