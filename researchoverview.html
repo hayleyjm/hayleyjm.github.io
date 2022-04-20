@@ -16,16 +16,19 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image hmac"><img src="images/HayleyMacpherson.jpg" alt="" height="269" width="204"/></span>
+					<span class="image hmac"><img src="images/HayleyMacpherson_square.jpeg" alt="" height="285" width="285"/></span>
                     <h1 id="logo">Hayley J. Macpherson</h1>
                     <p> Herchel Smith Fellow <br />
 					DAMTP, University of Cambridge, UK</p>
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="researchoverview.html" class="active">Non-cosmologists</a></li>
-                        <li><a href="expert.html">Cosmologists</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="researchoverview.html" class="active">Research</a></li>
+                        <li><a href="softwaredata.html">Software and data</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="outreach.html">Outreach</a></li>
+                        <li><a href="photos.html">Photography</a></li>
                     </ul>
 				</nav>
 				<footer>
@@ -48,32 +51,42 @@
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
-									<img src="images/CosmicWeb_banner.png" alt=""/>
+									<img src="images/phillip_island_fog_square.png" alt=""/>
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Research Overview (for non-experts)</h2>
+										<h2>Research</h2>
 										<h3></h3>
 
-									</header> 
-									<h4>Most modern cosmological simulations use an approximate theory of gravity.</h4>
+									</header>
+                                    My research is focused at the intersection of cosmology and numerical relativity, most of the time involving simulations.
+                                    Find a list of my publications <a href="https://scholar.google.com/citations?user=t6qQ_HQAAAAJ&hl=en">here</a>.
+                                    <br/><br/>
+
+                                    <h4>Overview </h4>
+                                    Most modern cosmological simulations use an approximate theory of gravity.<br/>
                                     <p> This is Newtonian gravity, which describes gravitational interactions by an invisible force pulling anything with mass towards anything else with mass. This works pretty well in most situations we're used to on Earth, and actually in most situations in general. It begins to be a problem if you have something really massive (e.g. a black hole), or something small near something much more massive (e.g. the precession of the perihelion of Mercury around the Sun), or when we consider really large distances. <br />In cosmology our whole game is really large distances. <br />
                                     <br />
 <!--                                    Einstein's theory of General Relativity describes gravity as a consequence of geometry, so objects move across the "surface" of spacetime, rather than being pulled by an invisible force. Turns out this works much better in those problematic situations. Einstein published his theory over 100 years ago and, so far, <em>all of its predictions have been totally correct</em> (as far as we can tell). <br />-->
 <!--                                    <br />-->
-                                    Einstein's theory of General Relativity is a much better description of gravity in these problematic situations.
+                                    Einstein's theory of general relativity is a much better description of gravity in these problematic situations.
 
-                                    Newtonian gravity (and some extensions to it) is predominantly used in cosmology because it's much simpler. Current state-of-the-art cosmological simulations use a combination of a homogeneous, isotropic spacetime in General Relativity and Newtonian dynamics.
-                                     Comparing what comes out of these simulations to observations means we can use them to test and improve our current best-fit cosmological model; the Lambda Cold Dark Matter model.<!-- These have taught us so much about how the Universe, and all the stuff in it, has evolved. -->  <br />
+                                    Newtonian gravity (and some extensions to it) is predominantly used in cosmology because it's much simpler. Current state-of-the-art cosmological simulations use a combination of a homogeneous, isotropic spacetime in general relativity and Newtonian dynamics.
+                                     Comparing what comes out of these simulations to observations means we can use them to test and improve our current best-fit cosmological model, the Lambda Cold Dark Matter model.<!-- These have taught us so much about how the Universe, and all the stuff in it, has evolved. -->  <br />
                                     <br />
-                                    The instruments we use to observe the Universe are constantly being improved. This means our data are getting more and more precise. As our errorbars get smaller, we're starting to notice some peculiarities between what we see and what we expected to see, based on our cosmological model. One suggestion (among many) is that this could be because we're not using General Relativity <em>in full</em>.  <br />
+                                    The instruments we use to observe the Universe are constantly being improved. This means our data are getting more and more precise. As our errorbars get smaller, we're starting to notice some peculiarities between what we see and what we expected to see, based on our cosmological model. One suggestion (among many) is that this could be because we're not using general relativity <em>in full</em>.  <br />
                                     <br />
-                                    Newtonian dynamics describes the nonlinear collapse of matter extremely well. But pairing this with a homogeneous, isotropic spacetime means that this spacetime is largely <em>unaffected</em> by this nonlinear evolution. Effects such as curvature and inhomogeneous expansion are not properly captured in these simulations. These will have a direct effect on our observations, since they both affect the path of light rays as they travel towards us. But, how large is this effect? Is it important as the precision of our observations improve? Could it already be having an effect on what we observe?<br/>
+                                    Newtonian dynamics describes the nonlinear gravitational collapse of matter extremely well. But pairing this with a homogeneous, isotropic spacetime means that this spacetime is <em>unaffected</em> by the matter on top of it. Effects such as curvature and inhomogeneous expansion are not properly captured in these simulations. These will have a direct effect on our observations, since they both affect the path of light rays as they travel towards us. But, how large is this effect? Is it important as the precision of our observations improve? Could it already be having an effect on what we observe?<br/>
                                     <br/>
                                     <b>Numerical relativity is a way to solve Einstein's equations <em>in full</em> on the computer, so we don't need to make <em>any</em> simplifying assumptions about the spacetime, or the interaction between the matter and that spacetime. I do large-scale cosmological simulations of nonlinear structure formation using numerical relativity. Simulations like this are extremely new, and were only done for the first time a few years ago. <!-- See the first ones <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.116y1301G/abstract">here</a>, <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.116y1302B/abstract">here</a>, and <a href="https://ui.adsabs.harvard.edu/abs/2017PhRvD..95f4028M/abstract">here</a>. <br/> -->
-                                        
-                                        Simulations without simplifying assumptions will allow us to fully quantify any and all of the general-relativistic effects we expect to see in upcoming precision cosmological data, and maybe in existing data too.</b><br/>
-                                    
+                                        </b><br/><br/>
+                                        <span class="image left"><img src="images/FLRW_256c_CMB_1Gpc_fullPk_twilight_square.png" alt="" height="500" width="500"/></span>
+
+                                        The image on the left is a snapshot from the end of one of my simulations using numerical relativity. Each side is 1 giga-parsec long, or about 30 billion trillion kilometers. The colours represent how dense the Universe is at different points. Red regions are the most dense and can be thought of as huge clusters of galaxies, white regions are medium density and can be thought of as thin filaments of galaxies, and dark blue regions are the least dense and can be thought of as huge regions that are almost completely empty, known as voids.
+                                        This simulation shows the large-scale cosmic web similar to Newtonian simulations, but with a difference: the spacetime in this simulation is curved according to the matter on top of it. In getting here, matter and spacetime have been in constant communication. <br/><br/>
+                                        <b>
+                                        Simulations without simplifying assumptions will allow us to fully quantify any and all of the general-relativistic effects we expect to see in upcoming precision cosmological data, and maybe in existing data too.<br/>
+                                        </b>
                                         
                                     </p>
 								</div>
@@ -81,12 +94,12 @@
 						
 						
 <!-- Three -->
-						
+<!--
 							<section id="three">
 								<div class="container">
-									<h3>What's that picture?</h3>
-									<!-- <section> -->
-                                        <h4>It's one of my simulations, so it's a model universe</h4>
+									<h3>Why use simulations?</h3>
+									
+                                    <h4>It's one of my simulations, so it's a model universe</h4>
                                         <p><span class="image left"><img src="images/ICs_cmb.png" alt="" height="370" width="370"/></span>
                                         <b>
                                         I use computer simulations to study the evolution of the Universe on really large scales. That picture up the top is a snapshot of one of my simulations. It's about 1 Giga-parsec across, or about 30 billion trillion kilometers. </b><br />
@@ -112,6 +125,7 @@
                                         
         
 									</section>
+                                        -->
 
 					
 
